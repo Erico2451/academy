@@ -3,43 +3,48 @@
     padding: 0%;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     outline: none;
 }
 body{
-    display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
-    background-color: center;
+    background-color:#fff;
     width: 100%;
     height: 100vh;
     transition: background 1s;
 }
 .button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
+    padding: 5px;
     width: 100px;
     height: 40px;
+    top:0px;
     border-radius: 25px;
-    box-shadow: 0 0 2.5 0 #39e2db59 ;
+    box-shadow: 0 0 2.5 0 #e0060659 ;
     cursor: pointer;
-    background-color: #ffff;
+    background-color: rgb(0, 0, 0);
 }
 .ball{
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 40px;
     height: 100%;
     border-radius: 50%;
-    background-color: #053742;
+    background-color: #fff;
     transition: left 1s;
 }
-.ball.move{
-    left: calc(100% -40px);
+.ball-move{
+    left: calc(100% - 40px);
 
 }
 .dark{
-    background-color: rgba(35, 213, 245, 0.133);
+    color:#fff;
+    background-color: #070707;
 }
 
 .green{
@@ -47,6 +52,7 @@ body{
 }
 
 header{
+    left:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +64,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 95vw;
+   
 }
 
 header img{
@@ -65,13 +72,16 @@ header img{
 }
 
 header ul{
+    margin-left: 50%;
     display: flex;
     list-style-type: none;
     gap: 20px;
     align-items: center;
+    
 }
 
 header ul button, header a{
+
     height: 40px;
     width: 150px;
     border-radius: 25px;
@@ -114,6 +124,7 @@ nav{
 }
 
 .nav-menu{
+    
     background-color: rgb(252, 252, 252);
     width: 400px;
     border-radius: 20px 0px 0px 20px;
@@ -163,6 +174,11 @@ nav button:hover{
 .nav-lista ul{
     list-style-type: none;
     font-size: 1.3rem;
+    
+}
+nav-lista ul:hover{
+     background-color: transparent;
+    color: aliceblue;
 }
 .nav-lista li{
     padding: 10px;
@@ -188,6 +204,7 @@ nav button:hover{
     border-radius: 25px;
     max-height: 40px;
     cursor: pointer;
+    
 }
 
 #comecar:hover{
@@ -605,7 +622,7 @@ nav button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff2d9;
+    background-color: #18d5ee;
     margin-top: 30px;
     width: 100%;
     overflow: hidden;
@@ -731,12 +748,12 @@ nav button:hover{
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    background-color:#49ff12a9;
+    background-color:#fff;
     cursor: pointer;
 }
 
 .res-card-bottom button:hover{
-    background-color:#49ff12a9;
+    background-color:#fff;
 }
 
 .textinho{

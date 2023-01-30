@@ -12,22 +12,14 @@
     <link rel="shortcut icon" href="assets/img/logotopo.png" type="image/x-icon">
     
 </head>
-<body>
-    <nav>
-        <div class="button">
-            <div class="ball"></div>
 
-        </div>
-        <script>
-            document.querySelector('.ball').addEventListener('click', ()=>{
-                e.target.classList.toggle('ball.move');
-                document.body.classList.toggle('dark');
-            });
-        </script>
+   
+    <nav>
+       
         <div class="nav-contain">
             <div class="nav-menu">
                 <div class="nav-menu-top">
-                    <img src="assets/img/logotopo.png" alt="">
+                    <img src="assets/img/logoooo.png" alt="">
 
                     <i class="fa-solid fa-x" onclick="chamaNav()"></i>
                 </div>
@@ -57,8 +49,9 @@
 
 
     <header>
+      
         <div class="header-itens">
-            <div class="logo"><img src="assets/img/Logocerto2.png" alt=""></div>
+            <div class="logo"><img src="assets/img/sera.png" alt=""></div>
             <ul>
                 
                <li><a href="#">Seja um franqueado</a></li>
@@ -66,6 +59,16 @@
                 <li id="comecar"><a href="cadastrar.html"><nobr>Cadastrar</nobr></li></a>
                 <li id="hamburguer"><i class="fa-solid fa-bars" onclick="chamaNav()"></i></li>
             </ul>
+            <div class="button">
+                <div class="ball"></div>
+    
+            </div>
+            <script>
+                document.querySelector('.ball').addEventListener('click', (e)=>{
+                    e.target.classList.toggle('.ball-move');
+                    document.body.classList.toggle('dark');
+                });
+            </script>
         </div>
     </header>
 
@@ -78,9 +81,12 @@
 
     <section id="encontre">
         <h1>Encontre a academia <span class="green">mais próxima!</span></h1>
-
+       
         <div class="enconte-a-academia">
-            <nobr><button id="encontra-gym">Escolher academia <span id="lupa"><i class="fa-solid fa-magnifying-glass"></i></span></button></nobr>
+            <li class="nav-item">
+                <a class="nav-link"href="local.html" target="encontra-gym">
+            <nobr><button class="nav-link"href="local.html" target="encontra-gym" id="encontra-gym">Escolher academia <span id="lupa"><i class="fa-solid fa-magnifying-glass"></i></span></button></nobr>
+        </a></li>
         </div>
     </section>
 
@@ -436,7 +442,7 @@
 
             <div class="res-card">
                 <div class="res-card-top card-energy">
-                    <img src="assets/img/smart-energy.svg" alt="">
+                    <img src="assets/img/Energy3.svg" alt="">
                     <h2><b>Academy Energy</b></h2>
                     <p>Bebidas funcionais para antes ou depois do treino. </p>
                 </div>
@@ -455,7 +461,7 @@
     <footer class="flex-container">
         <div class="footer-wrapper">
             <div class="footer-logo flex-container bottom-border">
-                <img src="assets/img/smart-fit-logo.png" alt="">
+                <img src="assets/img/sera.png" alt="">
             </div>
             <div class="siga bottom-border">
                 <h2>Siga a Senac Academy</h2>
@@ -506,7 +512,17 @@
             <h1>Desenvolvido Os Brabos do T.I</h1>
         </div>
     </footer>
-
+    
+        <div vw class="enabled">
+           <div vw-access-button class="active"></div>
+           <div vw-plugin-wrapper>
+               <div class="vw-plugin-top-wrapper"></div>
+           </div>
+       </div>
+       <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+       <script>
+       new window.VLibras.Widget('https://vlibras.gov.br/app');
+       </script>
 
     <script src="assets/js/main.js"></script>
 </body>
